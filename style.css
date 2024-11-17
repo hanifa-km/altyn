@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: whitesmoke;
+}
+/* header */
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #ffbf00;
+    font-size: 40px;
+
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.listItems{
+    list-style-type: none;
+    display: flex;
+}
+.navbar ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 0% 2vw;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar ul li a:hover{
+    color: #ffbf00;
+}
+.navbar ul li a:active{
+    color: #ffbf00;
+}
+
+/* intro */
+#intro{
+    background-color: hotpink;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    margin:5% 15%;
+    padding: 8%;
+    font-size: 30px;
+   margin-top: 150px;
+}
+#SkinCarePage{
+    text-align: center;
+    margin: 5% auto;
+    margin-top: 150px;
+}
+/* contentlinks */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    gap: 20px;
+    text-align: center;
+    margin: 8% 10%;
+}
+.table{
+    border:2px solid black;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow:4px 4px 8px hotpink;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #ffbf00;
+}
+a:active{
+    color: #ffbf00;
+}
+/*contents*/
+#Introduction-to-Skincare, #Understanding-Skin-Types, #Building-a-Skincare-Routine, #Key-Skincare-Ingredients-and-Their-Benefits, #Addressing-Common-Skin-Concerns, #Advanced-Treatments, #Sun-Protection, #Lifestyle-and-Diet-for-Healthy-Skin, #Choosing-the-Right, #Frequently-Asked-Questions, #The-Importance-of-a-Consistent-Skincare-Routine, #Step-by-Step-Guide-to-Skincare-Routine, #Weekly-Skincare-Treatments, #Top-Skincare-Tips-for-Every-Skin-Type, #Common-Skincare-Mistakes-to-Avoid, #Skin-Microbiome-The-Role-of-Good-Bacteria{
+    margin: 4% 15%;
+    div, h3, p, ul, ol, li{
+        margin: 20px 0px 20px 15px;
+        line-height: 1.5;
+    }
+}
+h2{
+    color:hotpink;
+    font-weight: bold;
+    margin: 3% 0% 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4{
+    color: hotpink;
+    margin: 1% 0%;
+}
+.pics{
+    text-align: center;
+
+    img{
+        height:auto;
+        width:30%;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px hotpink;
+    }
+    button{
+        border-radius: 18px;
+        background-color: hotpink !important;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .linkBackground{
+        background-color: hotpink;
+    }
+}
+
+
+/* footer */
+#footerContent{
+    text-align: center;
+    line-height: 1.5;
+}
+@media (max-width: 600px){
+    header{
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;}
+    .navbar{
+        flex-wrap: wrap;
+        gap: 2px;
+        justify-content: center;}
+    .logo{
+        font-size: 24px;
+        img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    #intro, #SkinCarePage{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 20px;
+        padding: 5%;}
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-left: 5%;
+        margin-right: 5%;}
+    .table{
+        padding: 2px;
+        font-size: 10px;
+        box-shadow: 2px 2px 4px hotpink;
+        align-content: center;
+    }
+    #Introduction-to-Skincare, #Understanding-Skin-Types, #Building-a-Skincare-Routine, #Key-Skincare-Ingredients-and-Their-Benefits, #Addressing-Common-Skin-Concerns, #Advanced-Treatments, #Sun-Protection, #Lifestyle-and-Diet-for-Healthy-Skin, #Choosing-the-Right, #Frequently-Asked-Questions, #The-Importance-of-a-Consistent-Skincare-Routine, #Step-by-Step-Guide-to-Skincare-Routine, #Weekly-Skincare-Treatments, #Top-Skincare-Tips-for-Every-Skin-Type, #Common-Skincare-Mistakes-to-Avoid, #Skin-Microbiome-The-Role-of-Good-Bacteria{
+        margin-left: 2%;
+        div, p, ul, ol, li{
+        font-size: 14px;}
+    h2{
+        font-size: 20px;}
+    h3{
+        font-size: 18px;}
+    }
+    footer{
+        font-size: 14px;
+    }
+    .pics img{
+        height: auto;
+        width: 60%;
+    }
+}
